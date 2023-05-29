@@ -1,0 +1,268 @@
+
+* {
+  text-align: start;
+  width: 100%;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-container header {
+  height: 100px;
+  font-size: large;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* gap:50% */
+}
+
+.button{
+  max-width: 180px;
+}
+
+.search-categories-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  gap: 50%;
+}
+
+.search-categories-row input {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.search-categories-row select {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(180, 177, 177);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align:start;
+  
+}
+
+.country{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 1px #e5e3e3;
+  
+  transition: .3s ease-in-out;
+}
+
+.country:hover{
+  transform: scale(1.02);
+}
+
+.country img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.country-name{
+  font-size: 20px; 
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.population{
+  font-size: 20px; 
+  /* font-weight: bold; */
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.population-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.population-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+.region-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.region-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+.capital-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.capital-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+
+.region{
+  font-size: 20px; 
+  font-weight: light;
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.capital{
+  font-size: 20px; 
+  font-weight: light;
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #222;
+}
+
+/* .dark-mode countries {
+  background-color: black;
+  color: white;
+} */
+
+/*styles specific to light mode */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-mode header {
+  background-color: #f5f5f5;
+}
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.country-name{
+  font-size: 20px; 
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.population{
+  font-size: 20px; 
+  /* font-weight: bold; */
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+/* .languages{
+  font-size: 20px; 
+  /* font-weight: bold; */
+  /* color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+} */ 
+
+.population-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.population-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+.region-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.region-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+.capital-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.capital-value {
+  font-size: 18px;
+  font-weight: light;
+}
+
+/* .languages-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.languages-value{
+  font-size: 18px;
+  font-weight: light;
+} */
