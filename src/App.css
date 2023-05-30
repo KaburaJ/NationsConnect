@@ -153,10 +153,254 @@
   background-color: #222;
 }
 
-/* .dark-mode countries {
+.dark-mode .country {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Modal */
+.dark-mode .modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+
+.dark-mode .modal-content {
   background-color: black;
-  color: white;
-} */
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%;
+  width: 400px;
+  height: 650px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dark-mode .country-name{
+  font-size: 20px; 
+  font-weight: bold;
+  color: white !important;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.dark-mode .population{
+  font-size: 20px; 
+  /* font-weight: bold; */
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .population-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .population-value {
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .region-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .region-value {
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .capital-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .capital-value {
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+
+.dark-mode .region{
+  font-size: 20px; 
+  font-weight: light;
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .capital{
+  font-size: 20px; 
+  font-weight: light;
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.dark-mode .country-name{
+  font-size: 20px; 
+  font-weight: bold;
+  color: white !important;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.dark-mode .callingCodes{
+  font-size: 20px; 
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .area{
+  font-size: 20px; 
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .timezones{
+  font-size: 20px; 
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .nativeName{
+  font-size: 20px; 
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .independent{
+  font-size: 20px; 
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.dark-mode .borders{
+  font-size: 20px; 
+  font-weight: light;
+  color: white !important;
+  margin-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.dark-mode .country-name-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .country-name-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .callingCodes-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .callingCodes-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .area-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .area-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .timezones-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .timezones-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .nativeName-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .nativeName-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .independent-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .independent-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
+
+.dark-mode .borders-label{
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.dark-mode .borders-value{
+  font-size: 18px;
+  font-weight: light;
+  color: white !important;
+}
 
 /*styles specific to light mode */
 .light-mode {
@@ -189,7 +433,7 @@
   border: 1px solid #888;
   max-width: 80%;
   width: 400px;
-  height: 600px;
+  height: 650px;
   border-radius: 10px;
   font-size: large;
 }

@@ -5,6 +5,18 @@ import React from 'react';
 // }
 
 function Modal({ closeModal, country }) {
+
+    const nativeNameChecker = (nativeName) =>{
+        for (const name in nativeName){
+            if (nativeName.hasOwnProperty(name)){
+                return nativeName[name].common;
+            }
+        }
+        return '';
+    }
+
+    let native = nativeNameChecker(country.name.nativeName);
+
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -16,7 +28,7 @@ function Modal({ closeModal, country }) {
                     </div>
                     <div className="callingCodes">
                         <span className="callingCodes-label">Calling Codes:</span>{" "}
-                        <span className="callingCodes-value">{country.callingCodes}</span>
+                        <span className="callingCodes-value">{country.idd.root}{country.idd.suffixes}</span>
                     </div>
 
                     <div className='area'>
@@ -25,12 +37,11 @@ function Modal({ closeModal, country }) {
                     </div>
                     <div className='timezones'>
                         <span className="timezones-label">Timezones:</span>{" "}
-                        <span className="timezones-value">{country.timezones}</span>
+                        <span className="timezones-value">{country.timezones? country.timezones.join(" "):''}</span>
                     </div>
                     <div className='nativeName'>
                         <span className="nativeName-label">Native Name:</span>{" "}
-                        {console.log(country.nativeName)}
-                        <span className="nativeName-value">{country.nativeName}</span>
+                        <span className="nativeName-value">{native}</span>
                     </div>
                     <div className='independent'>
                         <span className="independent-label">Independent:</span>{" "}
