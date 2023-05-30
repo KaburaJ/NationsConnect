@@ -179,6 +179,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
 }
 
 .modal-content {
@@ -188,7 +189,7 @@
   border: 1px solid #888;
   max-width: 80%;
   width: 400px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   font-size: large;
 }
@@ -201,8 +202,129 @@
   font-weight: bold;
   cursor: pointer;
 }
-
 .country-name{
+  font-size: 20px; 
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.callingCodes{
+  font-size: 20px; 
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.area{
+  font-size: 20px; 
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.timezones{
+  font-size: 20px; 
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.nativeName{
+  font-size: 20px; 
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.independent{
+  font-size: 20px; 
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.borders{
+  font-size: 20px; 
+  font-weight: light;
+  color: black;
+  margin-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.country-name-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.country-name-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.callingCodes-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.callingCodes-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.area-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.area-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.timezones-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timezones-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.nativeName-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nativeName-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.independent-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.independent-value{
+  font-size: 18px;
+  font-weight: light;
+}
+
+.borders-label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.borders-value{
+  font-size: 18px;
+  font-weight: light;
+}
+/* .country-name{
   font-size: 20px; 
   font-weight: bold;
   color: black;
@@ -213,11 +335,10 @@
 
 .population{
   font-size: 20px; 
-  /* font-weight: bold; */
   color: black;
   margin-top: 4px;
   margin-left: 30px;
-}
+} */
 
 /* .languages{
   font-size: 20px; 
@@ -227,7 +348,7 @@
   margin-left: 30px;
 } */ 
 
-.population-label {
+/* .population-label {
   font-size: 18px;
   font-weight: bold;
 }
@@ -255,7 +376,7 @@
 .capital-value {
   font-size: 18px;
   font-weight: light;
-}
+} */
 
 /* .languages-label{
   font-size: 18px;

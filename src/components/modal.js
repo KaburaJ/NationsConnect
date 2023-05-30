@@ -1,5 +1,9 @@
 import React from 'react';
 
+// const borderCountries = () => {
+//     borderCountry = country.borders.join(" ");
+// }
+
 function Modal({ closeModal, country }) {
     return (
         <div className="modal-overlay" onClick={closeModal}>
@@ -10,19 +14,33 @@ function Modal({ closeModal, country }) {
                     <div className='country-name'>
                         {country.name.common}
                     </div>
-                    <div className="population">
-                        <span className="population-label">Population:</span>{" "}
-                        <span className="population-value">{country.population.toLocaleString()}</span>
+                    <div className="callingCodes">
+                        <span className="callingCodes-label">Calling Codes:</span>{" "}
+                        <span className="callingCodes-value">{country.callingCodes}</span>
                     </div>
 
-                    <div className='region'>
-                        <span className="region-label">Region:</span>{" "}
-                        <span className="region-value">{country.region}</span>
+                    <div className='area'>
+                        <span className="area-label">Area:</span>{" "}
+                        <span className="area-value">{country.area.toLocaleString()}</span>
                     </div>
-                    <div className='capital'>
-                        <span className="capital-label">Capital:</span>{" "}
-                        <span className="capital-value">{country.capital}</span>
+                    <div className='timezones'>
+                        <span className="timezones-label">Timezones:</span>{" "}
+                        <span className="timezones-value">{country.timezones}</span>
                     </div>
+                    <div className='nativeName'>
+                        <span className="nativeName-label">Native Name:</span>{" "}
+                        {console.log(country.nativeName)}
+                        <span className="nativeName-value">{country.nativeName}</span>
+                    </div>
+                    <div className='independent'>
+                        <span className="independent-label">Independent:</span>{" "}
+                        <span className="independent-value">{country.independent.toLocaleString()}</span>
+                    </div>
+                    <div className='borders'>
+                        <span className="borders-label">Borders:</span>{" "}
+                        <span className="borders-value">{country.borders? country.borders.join(" "):''}</span>
+                    </div>
+                    
                     {/* <div className='neighbours'>
                         <span className="neighbours-label">Neighboring Countries:</span>
                         {country.subregion && country.subregion.map(neighbor => (
