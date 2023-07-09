@@ -19,13 +19,21 @@ Nations Connect is a web application built using React that allows users to expl
 
 2. Change to the project directory:
 
-```cd NationsConnect```
-3. Install the dependencies:
+   ```
+   cd NationsConnect
+   ```
 
-```npm install```
+3. Install the dependencies:
+   
+   ```
+   npm install
+   ```
+
 4. Start the development server:
 
-```npm start```
+   ```
+   npm start
+   ```
 
 The app will be accessible at `http://localhost:3000`.
 
