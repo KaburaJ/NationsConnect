@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NationsConnect/static/css/main.9409efa1.css",
+    "main.js": "/NationsConnect/static/js/main.184d8051.js",
+    "static/js/787.862c3719.chunk.js": "/NationsConnect/static/js/787.862c3719.chunk.js",
+    "index.html": "/NationsConnect/index.html",
+    "main.9409efa1.css.map": "/NationsConnect/static/css/main.9409efa1.css.map",
+    "main.184d8051.js.map": "/NationsConnect/static/js/main.184d8051.js.map",
+    "787.862c3719.chunk.js.map": "/NationsConnect/static/js/787.862c3719.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9409efa1.css",
+    "static/js/main.184d8051.js"
+  ]
+}
